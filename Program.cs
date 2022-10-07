@@ -12,6 +12,16 @@ namespace Variables
             Console.WriteLine("Your first name is {0} {1}", FirstName, LastName);
         }
     }
+    public class Car
+    {
+        public string model;
+        public string color;
+        public int year;
+        public void funct()
+        {
+            System.Console.WriteLine("Method called {0} {1} {2}", model, color, year);
+        }
+    }
 
     public class Program
     {
@@ -22,6 +32,19 @@ namespace Variables
             //  getName.LastName="Olatunji";
             getName.getFullName();
             ConstantTimeComplexities();
+            var ford = new Car();
+            ford.model = "Mustang";
+            ford.color = "red";
+            ford.year = 1969;
+            ford.funct();
+
+            Car Opel = new Car();
+            Opel.model = "Astra";
+            Opel.color = "white";
+            Opel.year = 2005;
+
+            Console.WriteLine(ford);
+            Console.WriteLine(Opel);
             int[] arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12 };
             int x = 12;
             int res = binarySearch(arr, x);
