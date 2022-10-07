@@ -54,7 +54,7 @@ namespace Variables
             }
             else
             {
-                System.Console.WriteLine("index found at index of {0}", res);
+                System.Console.WriteLine("index found at  {0}", res);
             }
             LinearTimeComplexities();
             int[] nums = { 10, 2, 42, 43, 64, 25, 46, 27, 18, 29, 101, 12 };
