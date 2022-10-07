@@ -38,91 +38,98 @@ namespace Variables
             // int quick = quickSort(nums, left, right);
             System.Console.WriteLine("\nSorted Array");
             QuadracticTimeComplexities(40, 20);
+            DataTypes();
         }
-        static public void DataTypes(){
-             
-        }
-    static public void QuadracticTimeComplexities(int first, int second)
-    {
-        for (int i = 0; i <= 4; i++)
+        static public void DataTypes()
         {
-            for (int j = 1; j < i; j++)
+            sbyte s = -120;
+            short h = 30000;
+            uint uni = 1000;
+            System.Console.WriteLine(s);
+            System.Console.WriteLine(h);
+            System.Console.WriteLine(uni);
+        }
+        static public void QuadracticTimeComplexities(int first, int second)
+        {
+            for (int i = 0; i <= 4; i++)
             {
-                System.Console.WriteLine("Loop value {0} {1}", i, j);
+                for (int j = 1; j < i; j++)
+                {
+                    System.Console.WriteLine("Loop value {0} {1}", i, j);
+                }
             }
         }
-    }
-    static public void quickSort(int[] arr, int left, int right)
-    {
-        int pivot;
-        if (left < right)
+        static public void quickSort(int[] arr, int left, int right)
         {
-            pivot = pertition(arr, left, right);
-            if (pivot > 1)
-            {
-                quickSort(arr, left, pivot - 1);
-            }
-            else if (pivot + 1 < right)
-            {
-                quickSort(arr, pivot + 1, right);
-            }
-        }
-    }
-    static public int pertition(int[] arr, int left, int right)
-    {
-        int pivot;
-        pivot = (int)arr[left];
-        while (true)
-        {
-            while (arr[left] < pivot)
-            {
-                left++;
-            }
-            while (arr[right] > pivot)
-            {
-                right--;
-            }
+            int pivot;
             if (left < right)
             {
-                int temp = arr[right];
-                arr[right] = arr[left];
+                pivot = pertition(arr, left, right);
+                if (pivot > 1)
+                {
+                    quickSort(arr, left, pivot - 1);
+                }
+                else if (pivot + 1 < right)
+                {
+                    quickSort(arr, pivot + 1, right);
+                }
             }
-            else
+        }
+        static public int pertition(int[] arr, int left, int right)
+        {
+            int pivot;
+            pivot = (int)arr[left];
+            while (true)
             {
-                return right;
+                while (arr[left] < pivot)
+                {
+                    left++;
+                }
+                while (arr[right] > pivot)
+                {
+                    right--;
+                }
+                if (left < right)
+                {
+                    int temp = arr[right];
+                    arr[right] = arr[left];
+                }
+                else
+                {
+                    return right;
+                }
+            }
+        }
+        static void ConstantTimeComplexities()
+        {
+            int a = 10;
+            int b = 40;
+            System.Console.WriteLine(a);
+            System.Console.WriteLine(b);
+        }
+        static int binarySearch(int[] arr, int x)
+        {
+            int low = 0;
+            int high = arr.Length - 1;
+            while (low <= high)
+            {
+                int medium = low + high - 1 / 2;
+                if (arr[medium] == x)
+                    return medium;
+                else if (arr[medium] < x)
+                    low = medium + 1;
+                else
+                    high = medium - 1;
+            }
+            return 0;
+        }
+        static void LinearTimeComplexities()
+        {
+            string[] personNames = { "Ayo", "miku", "olatunji", "john", "Ibukun" };
+            foreach (string person in personNames)
+            {
+                System.Console.WriteLine(person);
             }
         }
     }
-    static void ConstantTimeComplexities()
-    {
-        int a = 10;
-        int b = 40;
-        System.Console.WriteLine(a);
-        System.Console.WriteLine(b);
-    }
-    static int binarySearch(int[] arr, int x)
-    {
-        int low = 0;
-        int high = arr.Length - 1;
-        while (low <= high)
-        {
-            int medium = low + high - 1 / 2;
-            if (arr[medium] == x)
-                return medium;
-            else if (arr[medium] < x)
-                low = medium + 1;
-            else
-                high = medium - 1;
-        }
-        return 0;
-    }
-    static void LinearTimeComplexities()
-    {
-        string[] personNames = { "Ayo", "miku", "olatunji", "john", "Ibukun" };
-        foreach (string person in personNames)
-        {
-            System.Console.WriteLine(person);
-        }
-    }
-}
 }
