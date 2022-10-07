@@ -1,0 +1,15 @@
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/learn-c#
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/learn-c#.deps.json
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/learn-c#.runtimeconfig.json
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/learn-c#.dll
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/ref/learn-c#.dll
+/home/ayomiku/Desktop/learn-c#/bin/Debug/net6.0/learn-c#.pdb
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.csproj.AssemblyReference.cache
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.GeneratedMSBuildEditorConfig.editorconfig
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.AssemblyInfoInputs.cache
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.AssemblyInfo.cs
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.csproj.CoreCompileInputs.cache
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.dll
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/ref/learn-c#.dll
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.pdb
+/home/ayomiku/Desktop/learn-c#/obj/Debug/net6.0/learn-c#.genruntimeconfig.cache
